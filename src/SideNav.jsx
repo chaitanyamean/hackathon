@@ -187,7 +187,7 @@ export default function PersistentDrawerLeft() {
               <ListItemIcon>
                 <InboxIcon />
               </ListItemIcon>
-              <ListItemText primary="Home" />
+              <ListItemText primary="Dashboard" />
               {/* <Link to="about">{text}</Link> */}
             </ListItemButton>
           </ListItem>
@@ -196,7 +196,7 @@ export default function PersistentDrawerLeft() {
               <ListItemIcon>
                 <InboxIcon />
               </ListItemIcon>
-              <ListItemText primary="Create" />
+              <ListItemText primary="Create Incident" />
               {/* <Link to="about">{text}</Link> */}
             </ListItemButton>
           </ListItem>
