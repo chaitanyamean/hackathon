@@ -4,13 +4,10 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import Button from '@mui/material/Button';
 import SideNav from './SideNav';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import CreateIncident from './pages/CreateIncident';
+import Profile from './pages/Profile';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -21,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Dashboard />}></Route>
           <Route path="/create" exact element={<CreateIncident />}></Route>
+          <Route path="/profile" exact element={<Profile />}></Route>
         </Routes>
       </BrowserRouter>
     </>

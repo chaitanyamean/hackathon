@@ -23,22 +23,6 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 
-// import {
-//   createBrowserRouter,
-//   RouterProvider,
-//   Link,
-//   createRoutesFromElements,
-//   Route,
-// } from 'react-router-dom';
-
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route>
-//       <Route path="/" element={<div>HOME</div>} />
-//       <Route path="/test" element={<div>TEST</div>} />
-//     </Route>
-//   )
-// );
 const drawerWidth = 240;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
@@ -197,6 +181,16 @@ export default function PersistentDrawerLeft() {
                 <InboxIcon />
               </ListItemIcon>
               <ListItemText primary="Create Incident" />
+              {/* <Link to="about">{text}</Link> */}
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding onClick={() => navigate('/profile')}>
+            <ListItemButton>
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary="Profile" />
               {/* <Link to="about">{text}</Link> */}
             </ListItemButton>
           </ListItem>
